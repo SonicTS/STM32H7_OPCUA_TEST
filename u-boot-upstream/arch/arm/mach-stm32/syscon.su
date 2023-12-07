@@ -1,0 +1,1 @@
+arch/arm/mach-stm32/syscon.c:12:12:stm32_syscon_probe	24	static

@@ -1,0 +1,8 @@
+drivers/mmc/stm32_sdmmc2.c:238:13:stm32_sdmmc2_start_cmd	8	static
+drivers/mmc/stm32_sdmmc2.c:646:5:stm32_sdmmc_bind	8	static
+drivers/mmc/stm32_sdmmc2.c:558:12:stm32_sdmmc2_getcd	8	static
+drivers/mmc/stm32_sdmmc2.c:451:13:stm32_sdmmc2_reset	16	static
+drivers/mmc/stm32_sdmmc2.c:517:12:stm32_sdmmc2_set_ios	24	static
+drivers/mmc/stm32_sdmmc2.c:264:12:stm32_sdmmc2_end_cmd	24	static
+drivers/mmc/stm32_sdmmc2.c:576:12:stm32_sdmmc2_probe	40	static
+drivers/mmc/stm32_sdmmc2.c:381:12:stm32_sdmmc2_send_cmd	88	static

@@ -1,0 +1,2 @@
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/spi_test.c:17:13:spi_test_cs_init	40	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/spi_test.c:28:12:cmd_spi_flash_test	200	static

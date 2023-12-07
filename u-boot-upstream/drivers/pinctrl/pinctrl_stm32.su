@@ -1,0 +1,8 @@
+drivers/pinctrl/pinctrl_stm32.c:218:5:stm32_pinctrl_probe	8	static
+drivers/pinctrl/pinctrl_stm32.c:325:12:stm32_pinctrl_config	352	static
+drivers/pinctrl/pinctrl_stm32.c:373:12:stm32_pinctrl_set_state_simple	24	static
+drivers/pinctrl/pinctrl_stm32.c:55:12:stm32_populate_gpio_dev_list.isra	24	static
+drivers/pinctrl/pinctrl_stm32.c:88:12:stm32_pinctrl_get_pins_count	16	static
+drivers/pinctrl/pinctrl_stm32.c:116:24:stm32_pinctrl_get_gpio_dev	24	static
+drivers/pinctrl/pinctrl_stm32.c:172:12:stm32_pinctrl_get_pin_muxing	40	static
+drivers/pinctrl/pinctrl_stm32.c:150:20:stm32_pinctrl_get_pin_name	24	static

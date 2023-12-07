@@ -1,0 +1,11 @@
+cmd/ubifs.c:189:5:do_ubifs_mkdir	8	static
+cmd/ubifs.c:208:5:do_ubifs_rmdir	8	static
+cmd/ubifs.c:227:5:do_ubifs_unlink	8	static
+cmd/ubifs.c:82:12:do_ubifs_ls	8	static
+cmd/ubifs.c:106:12:do_ubifs_load	32	static
+cmd/ubifs.c:145:12:do_ubifs_write	56	static
+cmd/ubifs.c:22:5:cmd_ubifs_mount	16	static
+cmd/ubifs.c:41:12:do_ubifs_mount	0	static
+cmd/ubifs.c:54:5:ubifs_is_mounted	0	static
+cmd/ubifs.c:59:5:cmd_ubifs_umount	8	static
+cmd/ubifs.c:73:12:do_ubifs_umount	0	static

@@ -1,0 +1,2 @@
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/gui.c:57:6:gui_ts_main	512	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/gui.c:139:6:EXTI15_10_IRQHandler	0	static

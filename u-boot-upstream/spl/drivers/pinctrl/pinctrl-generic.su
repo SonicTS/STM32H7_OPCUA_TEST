@@ -1,0 +1,2 @@
+drivers/pinctrl/pinctrl-generic.c:298:12:pinctrl_generic_set_state_subnode.isra	80	static
+drivers/pinctrl/pinctrl-generic.c:342:5:pinctrl_generic_set_state	24	static

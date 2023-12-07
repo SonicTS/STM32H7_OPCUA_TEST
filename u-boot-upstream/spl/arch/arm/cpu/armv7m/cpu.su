@@ -1,0 +1,2 @@
+arch/arm/cpu/armv7m/cpu.c:18:5:cleanup_before_linux	8	static
+arch/arm/cpu/armv7m/cpu.c:48:6:reset_cpu	0	static

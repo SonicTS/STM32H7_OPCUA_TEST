@@ -1,0 +1,8 @@
+/home/usepat/Emcraft/STM32CubeH7/Drivers/BSP/Components/LAN8720/PHY_LAN8720.c:77:27:GetVersion	8	static
+/home/usepat/Emcraft/STM32CubeH7/Drivers/BSP/Components/LAN8720/PHY_LAN8720.c:90:16:Initialize	0	static
+/home/usepat/Emcraft/STM32CubeH7/Drivers/BSP/Components/LAN8720/PHY_LAN8720.c:111:16:Uninitialize	0	static
+/home/usepat/Emcraft/STM32CubeH7/Drivers/BSP/Components/LAN8720/PHY_LAN8720.c:187:16:SetInterface	0	static
+/home/usepat/Emcraft/STM32CubeH7/Drivers/BSP/Components/LAN8720/PHY_LAN8720.c:207:16:SetMode	0	static
+/home/usepat/Emcraft/STM32CubeH7/Drivers/BSP/Components/LAN8720/PHY_LAN8720.c:254:27:GetLinkState	16	static
+/home/usepat/Emcraft/STM32CubeH7/Drivers/BSP/Components/LAN8720/PHY_LAN8720.c:271:26:GetLinkInfo	16	static
+/home/usepat/Emcraft/STM32CubeH7/Drivers/BSP/Components/LAN8720/PHY_LAN8720.c:127:16:PowerControl	24	static

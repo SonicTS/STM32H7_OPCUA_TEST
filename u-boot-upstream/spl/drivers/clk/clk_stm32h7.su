@@ -1,0 +1,9 @@
+drivers/clk/clk_stm32h7.c:874:14:stm32_clk_set_rate	0	static
+drivers/clk/clk_stm32h7.c:932:12:stm32_clk_of_xlate	0	static
+drivers/clk/clk_stm32h7.c:879:12:stm32_clk_enable	8	static
+drivers/clk/clk_stm32h7.c:669:12:stm32_get_apb_psc.isra	32	static
+drivers/clk/clk_stm32h7.c:691:12:stm32_get_timer_rate.isra	16	static
+drivers/clk/clk_stm32h7.c:559:14:stm32_get_rate	40	static
+drivers/clk/clk_stm32h7.c:730:14:stm32_clk_get_rate	40	static
+drivers/clk/clk_stm32h7.c:425:5:configure_clocks	8	static
+drivers/clk/clk_stm32h7.c:899:12:stm32_clk_probe	24	static

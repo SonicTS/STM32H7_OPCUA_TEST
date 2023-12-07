@@ -1,0 +1,3 @@
+drivers/video/video_bmp.c:131:13:fb_put_byte	0	static
+drivers/video/video_bmp.c:137:13:fb_put_word	8	static
+drivers/video/video_bmp.c:190:5:video_bmp_display	72	static

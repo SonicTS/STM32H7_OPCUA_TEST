@@ -1,0 +1,3 @@
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/reliable_upgrade.c:12:12:cmd_reliable_upgrade	600	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/reliable_upgrade.c:86:5:sanity_check	0	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/reliable_upgrade.c:98:6:reliable_init	8	static

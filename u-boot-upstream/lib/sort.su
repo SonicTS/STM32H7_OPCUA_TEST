@@ -1,0 +1,4 @@
+lib/sort.c:24:13:u32_swap	0	static
+lib/sort.c:31:13:u64_swap	12	static
+lib/sort.c:38:13:generic_swap	8	static
+lib/sort.c:66:6:sort	48	static

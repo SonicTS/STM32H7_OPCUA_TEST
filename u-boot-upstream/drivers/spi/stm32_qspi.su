@@ -1,0 +1,11 @@
+drivers/spi/stm32_qspi.c:192:13:_stm32_qspi_wait_for_not_busy	0	static
+drivers/spi/stm32_qspi.c:306:21:_stm32_qspi_gen_ccr	12	static
+drivers/spi/stm32_qspi.c:608:12:stm32_qspi_remove	0	static
+drivers/spi/stm32_qspi.c:706:12:stm32_qspi_set_mode	8	static
+drivers/spi/stm32_qspi.c:667:12:stm32_qspi_set_speed	16	static
+drivers/spi/stm32_qspi.c:519:12:stm32_qspi_ofdata_to_platdata	72	static
+drivers/spi/stm32_qspi.c:555:12:stm32_qspi_probe	40	static
+drivers/spi/stm32_qspi.c:234:21:_stm32_qspi_gen_ccr_w25n01.isra	8	static
+drivers/spi/stm32_qspi.c:613:12:stm32_qspi_claim_bus	16	static
+drivers/spi/stm32_qspi.c:637:12:stm32_qspi_release_bus	8	static
+drivers/spi/stm32_qspi.c:650:12:stm32_qspi_xfer	32	static

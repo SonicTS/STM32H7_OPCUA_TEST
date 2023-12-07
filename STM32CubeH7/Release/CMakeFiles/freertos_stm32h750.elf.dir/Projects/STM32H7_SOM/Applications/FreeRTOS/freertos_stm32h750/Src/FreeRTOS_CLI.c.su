@@ -1,0 +1,5 @@
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/FreeRTOS_CLI.c:283:19:prvHelpCommand	16	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/FreeRTOS_CLI.c:105:12:FreeRTOS_CLIRegisterCommand	16	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/FreeRTOS_CLI.c:146:12:FreeRTOS_CLIProcessCommand	40	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/FreeRTOS_CLI.c:221:7:FreeRTOS_CLIGetOutputBuffer	0	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/FreeRTOS_CLI.c:227:13:FreeRTOS_CLIGetParameter	12	static

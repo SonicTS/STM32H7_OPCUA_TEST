@@ -1,0 +1,2 @@
+drivers/net/phy/smsc.c:35:12:smsc_startup	16	static
+drivers/net/phy/smsc.c:106:5:phy_smsc_init	8	static

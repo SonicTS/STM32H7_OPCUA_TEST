@@ -1,0 +1,3 @@
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/i2c_test.c:33:12:cmd_i2c_scan	32	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/i2c_test.c:66:12:cmd_i2c_read	56	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/i2c_test.c:144:12:cmd_i2c_write	136	static

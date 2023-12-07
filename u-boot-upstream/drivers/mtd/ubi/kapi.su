@@ -1,0 +1,16 @@
+drivers/mtd/ubi/kapi.c:31:6:ubi_do_get_device_info	0	static
+drivers/mtd/ubi/kapi.c:53:5:ubi_get_device_info	8	static
+drivers/mtd/ubi/kapi.c:74:6:ubi_do_get_volume_info	12	static
+drivers/mtd/ubi/kapi.c:96:6:ubi_get_volume_info	0	static
+drivers/mtd/ubi/kapi.c:333:6:ubi_close_volume	8	static
+drivers/mtd/ubi/kapi.c:121:25:ubi_open_volume	40	static
+drivers/mtd/ubi/kapi.c:241:25:ubi_open_volume_nm	32	static
+drivers/mtd/ubi/kapi.c:430:5:ubi_leb_read	40	static
+drivers/mtd/ubi/kapi.c:522:5:ubi_leb_write	32	static
+drivers/mtd/ubi/kapi.c:567:5:ubi_leb_change	32	static
+drivers/mtd/ubi/kapi.c:608:5:ubi_leb_erase	16	static
+drivers/mtd/ubi/kapi.c:669:5:ubi_leb_unmap	0	static
+drivers/mtd/ubi/kapi.c:705:5:ubi_leb_map	16	static
+drivers/mtd/ubi/kapi.c:744:5:ubi_is_mapped	0	static
+drivers/mtd/ubi/kapi.c:768:5:ubi_sync	8	static
+drivers/mtd/ubi/kapi.c:794:5:ubi_flush	16	static

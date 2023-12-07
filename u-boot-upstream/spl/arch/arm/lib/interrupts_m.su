@@ -1,0 +1,10 @@
+arch/arm/lib/interrupts_m.c:30:5:interrupt_init	0	static
+arch/arm/lib/interrupts_m.c:35:6:enable_interrupts	0	static
+arch/arm/lib/interrupts_m.c:40:5:disable_interrupts	0	static
+arch/arm/lib/interrupts_m.c:45:6:dump_regs	16	static
+arch/arm/lib/interrupts_m.c:55:6:bad_mode	8	static
+arch/arm/lib/interrupts_m.c:61:6:do_hard_fault	8	static
+arch/arm/lib/interrupts_m.c:68:6:do_mm_fault	8	static
+arch/arm/lib/interrupts_m.c:75:6:do_bus_fault	8	static
+arch/arm/lib/interrupts_m.c:82:6:do_usage_fault	8	static
+arch/arm/lib/interrupts_m.c:89:6:do_invalid_entry	8	static

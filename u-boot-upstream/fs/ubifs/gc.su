@@ -1,0 +1,11 @@
+fs/ubifs/gc.c:157:12:nondata_nodes_cmp	16	static
+fs/ubifs/gc.c:114:12:data_nodes_cmp	16	static
+fs/ubifs/gc.c:436:12:gc_sync_wbufs	16	static
+fs/ubifs/gc.c:311:12:move_node	48	static
+fs/ubifs/gc.c:70:12:switch_gc_head	16	static
+fs/ubifs/gc.c:459:5:ubifs_garbage_collect_leb	72	static
+fs/ubifs/gc.c:638:5:ubifs_garbage_collect	80	static
+fs/ubifs/gc.c:829:5:ubifs_gc_start_commit	40	static
+fs/ubifs/gc.c:908:5:ubifs_gc_end_commit	40	static
+fs/ubifs/gc.c:946:6:ubifs_destroy_idx_gc	16	static
+fs/ubifs/gc.c:965:5:ubifs_get_idx_gc_leb	8	static

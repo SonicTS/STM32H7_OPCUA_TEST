@@ -1,0 +1,3 @@
+cmd/clk.c:70:12:do_clk	24	static
+cmd/clk.c:13:12:soc_clk_dump	40	static
+cmd/clk.c:52:12:do_clk_dump	8	static

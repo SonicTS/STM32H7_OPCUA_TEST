@@ -1,0 +1,2 @@
+cmd/source.c:44:1:source	32	static
+cmd/source.c:163:12:do_source	16	static

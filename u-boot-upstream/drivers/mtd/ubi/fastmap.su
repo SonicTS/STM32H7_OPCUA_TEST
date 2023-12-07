@@ -1,0 +1,7 @@
+drivers/mtd/ubi/fastmap.c:1360:12:erase_block	24	static
+drivers/mtd/ubi/fastmap.c:1469:13:return_fm_pebs	24	static
+drivers/mtd/ubi/fastmap.c:142:12:add_aeb.isra	24	static
+drivers/mtd/ubi/fastmap.c:458:12:scan_pool	56	static
+drivers/mtd/ubi/fastmap.c:88:8:ubi_calc_fm_size	0	static
+drivers/mtd/ubi/fastmap.c:877:5:ubi_scan_fastmap	144	static
+drivers/mtd/ubi/fastmap.c:1493:5:ubi_update_fastmap	72	static

@@ -1,0 +1,35 @@
+/dts-v1/;
+
+/ {
+	description = "FreeRTOS Boot Image for STM32H7-SOM";
+	#address-cells = <1>;
+
+	images {
+		kernel {
+			description = "FreeRTOS Image";
+			data = /incbin/("freertos_stm32h750.bin");
+			type = "kernel";
+			arch = "arm";
+			os = "linux";
+			compression = "none";
+			load = <0xd0600000>;
+			entry = <0xd061cc7d>;
+			hash-1 {
+			       algo = "sha1";
+			};
+		};
+	};
+
+	configurations {
+		default = "config-1";
+		config-1 {
+			description = "FreeRTOS Boot Image";
+			kernel = "kernel";
+			signature {
+				algo = "sha1,rsa2048";
+				key-name-hint = "dev";
+				sign-images = "kernel";
+			};
+		};
+	};
+};

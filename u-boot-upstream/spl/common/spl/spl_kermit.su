@@ -1,0 +1,8 @@
+common/spl/spl_kermit.c:388:13:bin_data_init	0	static
+common/spl/spl_kermit.c:400:13:k_data_save	0	static
+common/spl/spl_kermit.c:406:13:k_data_restore	0	static
+common/spl/spl_kermit.c:477:12:chk1	0	static
+common/spl/spl_kermit.c:487:13:s1_sendpacket	16	static
+common/spl/spl_kermit.c:380:13:bin_data_char	0	static
+common/spl/spl_kermit.c:94:5:spl_kermit_init	8	static
+common/spl/spl_kermit.c:108:5:spl_kermit_load_binary	48	static

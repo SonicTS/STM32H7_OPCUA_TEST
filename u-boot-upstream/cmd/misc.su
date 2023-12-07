@@ -1,0 +1,2 @@
+cmd/misc.c:14:12:do_sleep	24	static
+cmd/misc.c:61:12:do_timer	8	static

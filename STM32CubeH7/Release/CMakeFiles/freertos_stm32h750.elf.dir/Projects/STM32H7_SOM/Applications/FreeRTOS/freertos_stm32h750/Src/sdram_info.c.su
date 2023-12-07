@@ -1,0 +1,2 @@
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/sdram_info.c:8:10:get_sdram_size	16	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/sdram_info.c:19:12:cmd_sdram_info	8	static

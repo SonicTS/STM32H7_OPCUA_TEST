@@ -1,0 +1,8 @@
+fs/ubifs/commit.c:113:12:do_commit	112	static
+fs/ubifs/commit.c:289:5:ubifs_bg_thread	16	static
+fs/ubifs/commit.c:340:6:ubifs_commit_required	0	static
+fs/ubifs/commit.c:370:6:ubifs_request_bg_commit	0	static
+fs/ubifs/commit.c:415:5:ubifs_run_commit	0	static
+fs/ubifs/commit.c:483:5:ubifs_gc_should_commit	0	static
+fs/ubifs/commit.c:530:5:dbg_old_index_check_init	40	static
+fs/ubifs/commit.c:569:5:dbg_check_old_index	0	static

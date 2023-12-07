@@ -1,0 +1,5 @@
+fs/ubifs/tnc_commit.c:706:12:free_unused_idx_lebs	40	static
+fs/ubifs/tnc_commit.c:118:12:fill_gap	56	static
+fs/ubifs/tnc_commit.c:576:28:find_first_dirty.part.0	16	static
+fs/ubifs/tnc_commit.c:747:5:ubifs_tnc_start_commit	104	static
+fs/ubifs/tnc_commit.c:1052:5:ubifs_tnc_end_commit	72	static

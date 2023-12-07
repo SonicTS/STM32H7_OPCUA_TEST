@@ -1,0 +1,4 @@
+drivers/mtd/stm32h7_flash.c:27:15:flash_init	0	static
+drivers/mtd/stm32h7_flash.c:51:6:flash_print_info	32	static
+drivers/mtd/stm32h7_flash.c:77:5:flash_erase	0	static
+drivers/mtd/stm32h7_flash.c:105:5:write_buff	12	static

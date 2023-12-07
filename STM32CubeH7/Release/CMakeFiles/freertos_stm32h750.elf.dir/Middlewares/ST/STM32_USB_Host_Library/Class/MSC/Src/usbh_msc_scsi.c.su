@@ -1,0 +1,6 @@
+/home/usepat/Emcraft/STM32CubeH7/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc_scsi.c:102:20:USBH_MSC_SCSI_TestUnitReady	16	static
+/home/usepat/Emcraft/STM32CubeH7/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc_scsi.c:144:20:USBH_MSC_SCSI_ReadCapacity	16	static
+/home/usepat/Emcraft/STM32CubeH7/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc_scsi.c:200:20:USBH_MSC_SCSI_Inquiry	16	static
+/home/usepat/Emcraft/STM32CubeH7/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc_scsi.c:271:20:USBH_MSC_SCSI_RequestSense	24	static
+/home/usepat/Emcraft/STM32CubeH7/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc_scsi.c:330:20:USBH_MSC_SCSI_Write	24	static
+/home/usepat/Emcraft/STM32CubeH7/Middlewares/ST/STM32_USB_Host_Library/Class/MSC/Src/usbh_msc_scsi.c:391:20:USBH_MSC_SCSI_Read	24	static

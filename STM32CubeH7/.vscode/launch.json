@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug (OpenOCD)",
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "openocd",
+            "cwd": "${workspaceRoot}",
+            "executable": "Debug/freertos_stm32h750.elf",
+            "armToolchainPath": "/usr/bin",
+            "gdbPath": "/usr/bin/gdb-multiarch",
+            "configFiles": [
+                "Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/SW4STM32/STM32H750-SOM/freertos_stm32h750 Run.cfg"
+            ],
+            "postLaunchCommands": [
+                "monitor reset halt",
+            ],
+            "overrideLaunchCommands": [
+                "interpreter-exec console \"monitor reset halt\"",
+                //'target-download',
+                //'interpreter-exec console \"monitor reset halt\"',
+                "-enable-pretty-printing"
+            ],
+            "runToEntryPoint": "main",
+        }
+    ]
+}

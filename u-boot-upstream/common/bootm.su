@@ -1,0 +1,6 @@
+common/bootm.c:49:13:board_quiesce_devices	0	static
+common/bootm.c:241:5:bootm_find_images	40	static
+common/bootm.c:355:5:bootm_decomp_image	40	static
+common/bootm.c:509:7:bootm_disable_interrupts	0	static
+common/bootm.c:627:5:do_bootm_states	88	static
+common/bootm.c:921:13:switch_to_non_secure_mode	0	static

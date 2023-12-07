@@ -1,0 +1,10 @@
+board/emcraft/stm32h7-som/stm32h7-som.c:168:5:arch_early_init_r	24	static
+board/emcraft/stm32h7-som/stm32h7-som.c:177:5:dram_init	16	static
+board/emcraft/stm32h7-som/stm32h7-som.c:204:5:dram_init_banksize	8	static
+board/emcraft/stm32h7-som/stm32h7-som.c:211:5:board_early_init_f	0	static
+board/emcraft/stm32h7-som/stm32h7-som.c:216:5:get_board_rev	0	static
+board/emcraft/stm32h7-som/stm32h7-som.c:255:5:board_late_init	24	static
+board/emcraft/stm32h7-som/stm32h7-som.c:287:5:board_init	0	static
+board/emcraft/stm32h7-som/stm32h7-som.c:295:5:board_interface_eth_init	8	static
+board/emcraft/stm32h7-som/stm32h7-som.c:332:6:spl_board_init	8	static
+board/emcraft/stm32h7-som/stm32h7-som.c:343:5:spl_boot_device	0	static

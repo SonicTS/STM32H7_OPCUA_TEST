@@ -1,0 +1,9 @@
+fs/ubifs/budget.c:388:12:calc_data_growth	8	static
+fs/ubifs/budget.c:408:12:calc_dd_growth	12	static
+fs/ubifs/budget.c:172:5:ubifs_calc_min_idx_lebs	24	static
+fs/ubifs/budget.c:203:11:ubifs_calc_available	16	static
+fs/ubifs/budget.c:436:5:ubifs_budget_space	56	static
+fs/ubifs/budget.c:525:6:ubifs_release_budget	24	static
+fs/ubifs/budget.c:581:6:ubifs_convert_page_budget	16	static
+fs/ubifs/budget.c:604:6:ubifs_release_dirty_inode_budget	0	static
+fs/ubifs/budget.c:636:11:ubifs_reported_space	16	static

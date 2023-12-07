@@ -1,0 +1,3 @@
+/home/usepat/Emcraft/STM32CubeH7/Debug/CMakeFiles/freertos_stm32h750.elf.dir
+/home/usepat/Emcraft/STM32CubeH7/Debug/CMakeFiles/edit_cache.dir
+/home/usepat/Emcraft/STM32CubeH7/Debug/CMakeFiles/rebuild_cache.dir

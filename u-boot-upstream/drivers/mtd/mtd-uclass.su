@@ -1,0 +1,1 @@
+drivers/mtd/mtd-uclass.c:19:5:mtd_probe	0	static

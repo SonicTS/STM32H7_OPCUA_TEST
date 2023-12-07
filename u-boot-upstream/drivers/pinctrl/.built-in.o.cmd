@@ -1,0 +1,1 @@
+cmd_drivers/pinctrl/built-in.o :=  arm-none-eabi-ld.bfd   -r -o drivers/pinctrl/built-in.o drivers/pinctrl/pinctrl-uclass.o drivers/pinctrl/nxp/built-in.o drivers/pinctrl/pinctrl_stm32.o drivers/pinctrl/broadcom/built-in.o 

@@ -1,0 +1,15 @@
+fs/ubifs/journal.c:504:13:set_dent_cookie	0	static
+fs/ubifs/journal.c:313:12:make_reservation	72	static
+fs/ubifs/journal.c:447:13:pack_inode	32	static
+fs/ubifs/journal.c:497:13:mark_inode_clean	8	static
+fs/ubifs/journal.c:417:12:get_dent_type	8	static
+fs/ubifs/journal.c:276:12:write_head.constprop	16	static
+fs/ubifs/journal.c:539:5:ubifs_jnl_update	88	static
+fs/ubifs/journal.c:709:5:ubifs_jnl_write_data	64	static
+fs/ubifs/journal.c:810:5:ubifs_jnl_write_inode	56	static
+fs/ubifs/journal.c:906:5:ubifs_jnl_delete_inode	16	static
+fs/ubifs/journal.c:952:5:ubifs_jnl_xrename	80	static
+fs/ubifs/journal.c:1092:5:ubifs_jnl_rename	104	static
+fs/ubifs/journal.c:1356:5:ubifs_jnl_truncate	104	static
+fs/ubifs/journal.c:1498:5:ubifs_jnl_delete_xattr	88	static
+fs/ubifs/journal.c:1609:5:ubifs_jnl_change_xattr	64	static

@@ -1,0 +1,2 @@
+drivers/timer/stm32_timer.c:53:12:stm32_timer_get_count	8	static
+drivers/timer/stm32_timer.c:63:12:stm32_timer_probe	40	static

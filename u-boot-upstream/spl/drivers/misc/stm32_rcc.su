@@ -1,0 +1,1 @@
+drivers/misc/stm32_rcc.c:38:12:stm32_rcc_bind	32	static

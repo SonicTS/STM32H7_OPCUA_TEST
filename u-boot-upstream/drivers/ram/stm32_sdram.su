@@ -1,0 +1,4 @@
+drivers/ram/stm32_sdram.c:385:12:stm32_fmc_get_info	0	static
+drivers/ram/stm32_sdram.c:254:12:stm32_fmc_ofdata_to_platdata	120	static
+drivers/ram/stm32_sdram.c:157:5:stm32_sdram_init	32	static
+drivers/ram/stm32_sdram.c:351:12:stm32_fmc_probe	32	static

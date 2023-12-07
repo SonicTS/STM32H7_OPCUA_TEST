@@ -1,0 +1,3 @@
+lib/rsa/rsa-verify.c:360:12:rsa_verify_with_keynode	88	dynamic
+lib/rsa/rsa-verify.c:60:5:padding_pkcs_15_verify	40	static
+lib/rsa/rsa-verify.c:399:5:rsa_verify	152	dynamic

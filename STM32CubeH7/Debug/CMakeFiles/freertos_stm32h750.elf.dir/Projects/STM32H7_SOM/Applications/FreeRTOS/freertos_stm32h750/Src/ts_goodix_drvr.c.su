@@ -1,0 +1,9 @@
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/ts_goodix_drvr.c:38:12:ts_goodix_config	280	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/ts_goodix_drvr.c:77:12:ts_goodix_process_input	32	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/ts_goodix_drvr.c:108:13:ts_goodix_report_touch	24	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/ts_goodix_drvr.c:114:18:ts_goodix_getirq_by_line	16	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/ts_goodix_drvr.c:146:13:ts_goodix_enable_irq	24	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/ts_goodix_drvr.c:154:13:ts_goodix_disable_irq	24	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/ts_goodix_drvr.c:161:5:ts_goodix_read_input	128	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/ts_goodix_drvr.c:179:21:ts_goodix_init	72	static
+/home/usepat/Emcraft/STM32CubeH7/Projects/STM32H7_SOM/Applications/FreeRTOS/freertos_stm32h750/Src/ts_goodix_drvr.c:273:6:ts_goodix_gpio_exti_callback	16	static

@@ -1,0 +1,2 @@
+drivers/bootcount/bootcount_env.c:10:6:bootcount_store	8	static
+drivers/bootcount/bootcount_env.c:20:7:bootcount_load	8	static

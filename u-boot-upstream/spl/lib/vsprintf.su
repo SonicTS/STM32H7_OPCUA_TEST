@@ -1,0 +1,17 @@
+lib/vsprintf.c:51:14:put_dec_trunc	20	static
+lib/vsprintf.c:129:23:put_dec	32	static
+lib/vsprintf.c:158:14:number	120	static
+lib/vsprintf.c:257:14:string	24	static
+lib/vsprintf.c:507:12:vsnprintf_internal	120	static
+lib/vsprintf.c:712:5:vsnprintf	0	static
+lib/vsprintf.c:718:5:vscnprintf	8	static
+lib/vsprintf.c:731:5:snprintf	16	static
+lib/vsprintf.c:743:5:scnprintf	16	static
+lib/vsprintf.c:768:5:vsprintf	0	static
+lib/vsprintf.c:773:5:sprintf	12	static
+lib/vsprintf.c:785:5:printf	312	static
+lib/vsprintf.c:808:5:vprintf	304	static
+lib/vsprintf.c:828:7:simple_itoa	12	static
+lib/vsprintf.c:843:6:print_grouped_ull	48	static
+lib/vsprintf.c:858:6:str2off	24	static
+lib/vsprintf.c:866:6:str2long	24	static

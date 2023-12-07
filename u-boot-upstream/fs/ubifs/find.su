@@ -1,0 +1,12 @@
+fs/ubifs/find.c:54:12:valuable	0	static
+fs/ubifs/find.c:95:12:scan_for_dirty_cb	24	static
+fs/ubifs/find.c:362:12:scan_for_free_cb	24	static
+fs/ubifs/find.c:602:12:scan_for_idx_cb	24	static
+fs/ubifs/find.c:741:12:cmp_dirty_idx	0	static
+fs/ubifs/find.c:750:13:swap_dirty_idx	0	static
+fs/ubifs/find.c:805:12:scan_dirty_idx_cb	24	static
+fs/ubifs/find.c:233:5:ubifs_find_dirty_leb	56	static
+fs/ubifs/find.c:493:5:ubifs_find_free_space	56	static
+fs/ubifs/find.c:673:5:ubifs_find_free_leb_for_idx	48	static
+fs/ubifs/find.c:767:5:ubifs_save_dirty_idx_lnums	16	static
+fs/ubifs/find.c:963:5:ubifs_find_dirty_idx_leb	40	static

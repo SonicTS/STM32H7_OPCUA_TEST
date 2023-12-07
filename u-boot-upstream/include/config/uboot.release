@@ -1,0 +1,1 @@
+2019.04"-$(git describe --tags --exact-match 2>/dev/null)"-g20062ac0fd-dirty

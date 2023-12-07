@@ -1,0 +1,2 @@
+fs/ubifs/master.c:249:5:ubifs_read_master	72	static
+fs/ubifs/master.c:354:5:ubifs_write_master	24	static

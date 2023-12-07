@@ -1,0 +1,14 @@
+arch/arm/cpu/armv7m/cache.c:115:12:get_cline_size	0	static
+arch/arm/cpu/armv7m/cache.c:170:12:action_dcache_all	12	static
+arch/arm/cpu/armv7m/cache.c:235:5:dcache_status	0	static
+arch/arm/cpu/armv7m/cache.c:200:6:dcache_enable	8	static
+arch/arm/cpu/armv7m/cache.c:217:6:dcache_disable	8	static
+arch/arm/cpu/armv7m/cache.c:240:6:invalidate_dcache_range	16	static
+arch/arm/cpu/armv7m/cache.c:248:6:flush_dcache_range	16	static
+arch/arm/cpu/armv7m/cache.c:255:6:flush_dcache_all	8	static
+arch/arm/cpu/armv7m/cache.c:263:6:invalidate_dcache_all	8	static
+arch/arm/cpu/armv7m/cache.c:297:6:invalidate_icache_all	0	static
+arch/arm/cpu/armv7m/cache.c:319:5:icache_status	0	static
+arch/arm/cpu/armv7m/cache.c:306:6:icache_enable	8	static
+arch/arm/cpu/armv7m/cache.c:324:6:icache_disable	8	static
+arch/arm/cpu/armv7m/cache.c:350:6:enable_caches	8	static

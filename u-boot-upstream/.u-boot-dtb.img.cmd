@@ -1,0 +1,1 @@
+cmd_u-boot-dtb.img := ./tools/mkimage -A arm -T firmware -C none -O u-boot -a 0x24001000 -e 0x240013FC -n "U-Boot 2019.04"-$$(git describe --tags --exact-match 2>/dev/null)"-g20062ac0fd-dirty for stm32h7-som board" -d u-boot.bin u-boot-dtb.img >/dev/null 

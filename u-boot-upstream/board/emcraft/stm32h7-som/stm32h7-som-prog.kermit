@@ -1,0 +1,227 @@
+#!/usr/bin/kermit +
+
+assign tty          \%1
+assign img          \%2
+assign rtos_img     \%3
+assign splash_img   \%4
+assign loadaddr     0x24000FC0
+assign copyaddr     0x30000000
+assign entry        0x240013FD
+assign flash_start  0x00000000
+assign flash_end    0x00060000
+assign flash_size   0x40000
+assign env_vol_size 0x8000
+assign rtos_vol_size 0x400000
+assign splash_vol_size 0x200000
+assign spl_msg      {Hit 's' key to enter spl shell: }
+assign spl_key      {s}
+assign spl_prompt   {spl-> }
+assign uboot_msg    {Hit any key to stop autoboot: }
+assign uboot_key    {q}
+assign uboot_prompt {STM32H7-SOM U-Boot > }
+
+# check args
+
+IF NOT DEFINED \%1 EXIT 1 No TTY device specified
+
+IF NOT DEFINED \%2 EXIT 1 No U-Boot image specified
+
+set line \m(tty)
+set speed 115200
+set carrier-watch off
+set flow-control none
+set prefixing all
+
+define boot_uboot {
+       # wait spl prompt
+
+       OUTPUT \{13}
+       INPUT 2 {\{13}\{10}\m(spl_prompt)}
+       IF FAIL EXIT 1 spl prompt timeout
+
+       # load and start main U-Boot
+
+       OUTPUT loadb \m(loadaddr) \{13}
+       send \m(img)
+       INPUT 60 {\{13}\{10}\m(spl_prompt)}
+       IF FAIL EXIT 1 loadb timeout
+
+       OUTPUT go \m(entry)\{13}
+       INPUT 60 {\{13}\{10}\m(uboot_msg)}
+       IF FAIL EXIT 1 u-boot timeout
+}
+
+define prog_uboot {
+       OUTPUT loadb \{13}
+       send \m(img)
+       INPUT 60 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 loadb timeout
+
+       OUTPUT mtd erase u-boot && mtd write u-boot $loadaddr 0 $filesize \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 erase/write timeout
+
+       echo {\{13}\{10}Successfully programmed \m(img) to SPI NAND at \m(flash_start)}
+}
+
+define create_ubi_env {
+       OUTPUT ubi part system \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 create env
+
+       # create env UBI volumes if they don't exist yet
+
+       OUTPUT ubi create env1 \m(env_vol_size) \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 create env
+
+       OUTPUT ubi create env2 \m(env_vol_size) \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 create env
+}
+
+define create_ubi {
+       OUTPUT ubi part system \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 create env
+
+       # Delete env and rtos UBI volumes
+
+       OUTPUT ubi remove env1 \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 remove env
+
+       OUTPUT ubi remove env2 \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 remove env
+
+       OUTPUT ubi remove rtos1 \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 remove rtos
+
+       OUTPUT ubi remove rtos2 \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 remove rtos
+
+       # create env UBI volumes
+
+       OUTPUT ubi create env1 \m(env_vol_size) \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 create env
+
+       OUTPUT ubi create env2 \m(env_vol_size) \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 create env
+
+       # create rtos UBI volumes
+
+       OUTPUT ubi create rtos1 \m(rtos_vol_size) \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 create rtos volumes
+
+       OUTPUT ubi create rtos2 \m(rtos_vol_size) \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 create rtos volumes
+}
+
+define prog_rtos {
+       OUTPUT loadb \{13}
+       send \m(rtos_img)
+       INPUT 60 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 loadb timeout
+
+       OUTPUT ubi write $loadaddr rtos1 $filesize \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 writing rtos image to UBI
+
+       echo {\{13}\{10}Successfully programmed \m(rtos_img) to the rtos1 UBI volume}
+
+       # initially set the boot variables
+
+       OUTPUT setenv boot1_valid 1 \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 init boot variables
+
+       OUTPUT setenv boot2_active 0 \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 init boot variables
+
+       OUTPUT setenv upgrade_available 0 \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 init boot variables
+
+       OUTPUT setenv bootcount 0 \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 init boot variables
+
+       OUTPUT saveenv \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 init boot variables
+}
+
+define prog_splash {
+       OUTPUT loadb \{13}
+       send \m(splash_img)
+       INPUT 60 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 loadb timeout
+
+       OUTPUT ubi write $loadaddr splash $filesize \{13}
+       INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+       IF FAIL EXIT 1 writing rtos image to UBI
+
+       echo {\{13}\{10}Successfully programmed \m(splash_img) to the splash UBI volume}
+}
+
+define reset_target {
+       OUTPUT reset \{13}
+       EXIT 0
+}
+
+echo {Reset the board to start programming "\m(img)" via "\m(tty)"}
+
+# wait for board reset
+INPUT 60 {\{13}\{10}\m(spl_msg)}
+IF FAIL EXIT 1 spl timeout
+OUTPUT \m(spl_key)
+
+# wait for SPL U-Boot prompt
+INPUT 2 {\{13}\{10}\m(spl_prompt)}
+IF FAIL EXIT 1 spl prompt timeout
+boot_uboot
+
+OUTPUT \m(uboot_key)
+INPUT 2 {\{13}\{10}\m(uboot_prompt)}
+IF FAIL EXIT 1 u-boot prompt timeout
+
+# load and program main U-Boot
+prog_uboot
+
+# create UBI volumes for U-Boot env
+IF NOT DEFINED \%3 create_ubi_env
+
+# check args for rtos image
+IF NOT DEFINED \%3 reset_target
+
+# create UBI volumes
+create_ubi
+
+# install rtos
+prog_rtos
+
+# check args for splash image
+IF NOT DEFINED \%4 reset_target
+
+# create splash volume
+
+OUTPUT ubi remove splash \{13}
+INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+IF FAIL EXIT 1 remove splash
+
+OUTPUT ubi create splash \m(splash_vol_size) \{13}
+INPUT 30 {\{13}\{10}\m(uboot_prompt)}
+IF FAIL EXIT 1 create splash volume
+
+# install splash screen
+prog_splash
+
+reset_target

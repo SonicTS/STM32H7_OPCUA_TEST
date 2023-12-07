@@ -1,0 +1,1 @@
+cmd_spl/drivers/mtd/built-in.o :=  arm-none-eabi-ld.bfd   -r -o spl/drivers/mtd/built-in.o spl/drivers/mtd/mtdcore.o spl/drivers/mtd/mtd_uboot.o spl/drivers/mtd/mtd-uclass.o spl/drivers/mtd/mtdpart.o spl/drivers/mtd/stm32h7_flash.o spl/drivers/mtd/nand/built-in.o 
